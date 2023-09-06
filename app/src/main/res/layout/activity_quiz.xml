@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/dogruSayisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dogru Sayisi: 0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/yanlisSayisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yanlis Sayisi: 0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/soruSayisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.SORU"
+        app:layout_constraintStart_toEndOf="@id/dogruSayisi"
+        app:layout_constraintEnd_toStartOf="@id/yanlisSayisi"
+        app:layout_constraintTop_toBottomOf="@id/yanlisSayisi"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+
+    <ImageView
+        android:id="@+id/bayrakImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/almanya"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/soruSayisi"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/aButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="ALMANYA"
+        app:layout_constraintStart_toStartOf="@id/bayrakImage"
+        app:layout_constraintEnd_toEndOf="@id/bayrakImage"
+        app:layout_constraintTop_toBottomOf="@id/bayrakImage"
+        android:backgroundTint="@android:color/holo_purple"
+        android:layout_marginTop="15dp"/>
+    <Button
+        android:id="@+id/bButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="TURKIYE"
+        app:layout_constraintStart_toStartOf="@id/bayrakImage"
+        app:layout_constraintEnd_toEndOf="@id/bayrakImage"
+        app:layout_constraintTop_toBottomOf="@id/aButton"
+        android:backgroundTint="@android:color/holo_purple"/>
+    <Button
+        android:id="@+id/cButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="ITALYA"
+        app:layout_constraintStart_toStartOf="@id/bayrakImage"
+        app:layout_constraintEnd_toEndOf="@id/bayrakImage"
+        app:layout_constraintTop_toBottomOf="@id/bButton"
+        android:backgroundTint="@android:color/holo_purple"/>
+    <Button
+        android:id="@+id/dButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="YUNANISTAN"
+        app:layout_constraintStart_toStartOf="@id/bayrakImage"
+        app:layout_constraintEnd_toEndOf="@id/bayrakImage"
+        app:layout_constraintTop_toBottomOf="@id/cButton"
+        android:backgroundTint="@android:color/holo_purple"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
