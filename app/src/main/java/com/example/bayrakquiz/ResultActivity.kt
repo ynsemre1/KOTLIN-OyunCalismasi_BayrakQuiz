@@ -24,18 +24,18 @@ class ResultActivity : AppCompatActivity() {
 
         val sonucDeger:TextView = findViewById(R.id.sonucDegerTest)
         when(basariYuzde){
-            10 -> sonucDeger.text = "AGA MALMISIN?"
-            20 -> sonucDeger.text = "BU ZEKAYA BU DEGER COK BILE"
-            30 -> sonucDeger.text = "DOGRU SOYLE LAMBAYA BASTIN MI?"
-            40 -> sonucDeger.text = "YARISINI BILE BILEMEMIS BIR SALAKSIN"
+            10 -> sonucDeger.text = "AGA HIC BILEMEDIN?"
+            20 -> sonucDeger.text = "BU DEGER COK BILE"
+            30 -> sonucDeger.text = "DOGRU SOYLE SAKALIYOR MUSUN"
+            40 -> sonucDeger.text = "YARISINI BILE BILEMEDIN"
             50 -> sonucDeger.text = "KULTURSUZ"
-            60 -> sonucDeger.text = "YANIGGG BILEMEDIM"
+            60 -> sonucDeger.text = "YANI BILEMEDIM"
             70 -> sonucDeger.text = "EH ISTE GIDERIN VAR"
             80 -> sonucDeger.text = "IYI BIR YUZDE CALISMAYA DEVAM"
             90 -> sonucDeger.text = "HELAL LAN HEPSINI BILDIN SAYIYORUM"
             100 -> sonucDeger.text = "SEN BU ULKENIN PARLAK ZEKALARINDANSIN"
             else -> {
-                sonucDeger.text = "SENIN KADAR SALAGI DAHA YOK"
+                sonucDeger.text = "SENIN KADARI YOK"
             }
         }
 
